@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+
+            <LinearLayout
+
+                android:layout_width="200dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/Vcc"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:text="Vcc" />
+
+                <TextView
+                    android:id="@+id/Ic"
+                    android:layout_width="200dp"
+                    android:layout_height="20dp"
+                    android:text="Ic" />
+
+                <TextView
+                    android:id="@+id/frequency"
+                    android:layout_width="200dp"
+                    android:layout_height="36dp"
+                    android:text="Frequency" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:weightSum="1">
+
+                <EditText
+                    android:id="@+id/editText2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="45dp"
+                    android:ems="10"
+                    android:hint="In Volts"
+                    android:inputType="number"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+                <EditText
+                    android:id="@+id/editText3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="45dp"
+                    android:ems="10"
+                    android:hint="In Amps"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:inputType="number" />
+
+                <EditText
+                    android:id="@+id/editText4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="45dp"
+                    android:ems="10"
+                    android:hint="In Hertz"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:inputType="number" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/buttonPanel"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Generate" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+
+            <LinearLayout
+                android:layout_width="200dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/Rc"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:text="Rc" />
+
+                <TextView
+                    android:id="@+id/R"
+                    android:layout_width="200dp"
+                    android:layout_height="20dp"
+                    android:text="R" />
+
+                <TextView
+                    android:id="@+id/C"
+                    android:layout_width="200dp"
+                    android:layout_height="36dp"
+                    android:text="C" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:weightSum="1">
+
+                <TextView
+                    android:id="@+id/editRc"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    />
+
+                <TextView
+                    android:id="@+id/editR"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    />
+
+                <TextView
+                    android:id="@+id/editC"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="305dp"
+            android:src="@drawable/astable" />
+    </LinearLayout>
+
+
+</ScrollView>
